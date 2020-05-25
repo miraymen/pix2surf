@@ -1,0 +1,8 @@
+chumpy 0.67.5
+openDR 0.77
+openCV-python 4.0
+scipy 1.2.0
+psbody-mesh 0.1
+psbody-smpl 0.1
+pillow 5.0.0
+numpy 1.14.5

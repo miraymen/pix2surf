@@ -10,7 +10,6 @@
 This repository contains code corresponding to the paper "Learning to Transfer Texture from Clothing Images to 3D Humans"
 
 # Demo
-Pix2Surf has been implemented and tested on a Debian 9 machine equipped with cuda 9.2 using a mixture of python=3.6 and python=2.7
 
 To run the demo you will need blender. This code has been tested with blender 2.79. Please download it from [here](https://download.blender.org/release/Blender2.79/). 
 
@@ -22,11 +21,11 @@ Install the requirements using conda:
 
 `source scripts/install_conda.sh`
 
-Change path to the directory where the repository was downloaded. Then download the pretrained weights and other assets using
+Change path to the downloaded repository and download the pretrained weights and other assets using:
 
 `source scripts/get_data.sh`
 
-Running the demo is as simple as 
+Running the demo is as simple as:
 
 `python demo.py` 
 
@@ -36,7 +35,7 @@ Example:
 
 `python demo.py --pose_id 2 --img_id 4 --lower_type 'pants'`
 
-We provide five pairs of upper and lower clothing images to run our demo script. Please note that we do not own the copyrights of the clothing images. These are released merely for demonstration purposes and should not be used for any commercial purposes.
+We provide five pairs of upper and lower clothing images to run our demo script. Please note that we do not own the copyrights of the clothing images. These are released merely for demonstration purposes and should not be used for any other purposes.
 By excuting the script to download data, you automatically consent to the [license agreement](https://smpl.is.tue.mpg.de/bodylicense) of the SMPL body.
 
 # Training
@@ -47,16 +46,16 @@ The training data for all neural models was obtained from the following websites
 
 We do not own the copyrights to these images and hence they cannot be released. 
 These can be obtained using a web scraper.
-Once these images have been obtained, we obtain silhouettes of these clothing images by a mixture of manual and autmatic [grab cut](https://docs.opencv.org/3.4/d8/d83/tutorial_py_grabcut.html) execution.
+Once these images have been obtained, we obtain silhouettes of these clothing images by a mixture of manual and autmatic execution of [grab cut](https://docs.opencv.org/3.4/d8/d83/tutorial_py_grabcut.html) .
 
 Sample masks and texture images are stored in the `./train/data` directory. 
-The code for obtaining the correspondence and texture maps is in the `./prep_data` directory. All the three scripts for silhouette matching, correspondence extraction and texture map extraction can be executed using the command
+The code for obtaining the correspondence and texture maps is in the `./prep_data` directory. All three scripts for silhouette matching, correspondence extraction and texture map extraction can be executed using the command
 
 `python ./prep_data/run.py`
 
 The dependencies for running the three scripts can be found in the `requirements_prep_data.txt` file
 
-Once the data has been obtained, the mapping and segmentation networks can be trained using the scripts provided in the `train` directory using the commands
+Once the data has been obtained, the mapping and segmentation networks can be trained using the scripts provided in the `train` directory using the commands :
 
 `python train_seg.py`
 

@@ -21,7 +21,7 @@ Install the requirements using conda:
 
 `source scripts/install_conda.sh`
 
-Change path to the downloaded repository and download the pretrained weights and other assets using:
+Download pretrained weights and other assets:
 
 `source scripts/get_data.sh`
 

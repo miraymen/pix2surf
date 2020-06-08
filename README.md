@@ -23,7 +23,7 @@ Install the requirements using conda:
 
 Download pretrained weights and other assets:
 
-`source scripts/get_data.sh`
+`source scripts/prepare_data.sh`
 
 Running the demo is as simple as:
 

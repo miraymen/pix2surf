@@ -1,8 +1,8 @@
 # Learning to Transfer Texture from Clothing Images to 3D Humans (CVPR 2020)
 
 >[Learning to Transfer Texture from Clothing Images to 3D Humans](https://arxiv.org/abs/2003.02050)  
-[Aymen Mir](https://virtualhumans.mpi-inf.mpg.de/people/Mir.html) [Thiemo Alldieck](https://virtualhumans.mpi-inf.mpg.de/people/Alldieck.html), [Gerard Pons-Moll](https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html)  
-*Proceedings of IEEE Conference on Computer Vision and Pattern Recognition*
+[Aymen Mir](https://virtualhumans.mpi-inf.mpg.de/people/Mir.html), [Thiemo Alldieck](https://virtualhumans.mpi-inf.mpg.de/people/Alldieck.html), [Gerard Pons-Moll](https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html)  
+*Proceedings of IEEE Conference on Computer Vision and Pattern Recognition 2020*
 
 ![Teaser](./teaser_new.jpg)
 ![Teaser_gif](./teaser_gif.gif)

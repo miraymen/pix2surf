@@ -113,10 +113,10 @@ class Demo():
         dict = ['up_front', 'up_back', 'low_front', 'low_back']
         for val in dict:
             map_net_pth = getattr(self.opt, 'map_'+ val)
-            self.net_map.load_state_dict(torch.load(map_net_pth))
+            self.net_map.load_state_dict(torch.load(map_net_pth, map_location='cuda:0'))
 
             seg_net_pth = getattr(self.opt, 'seg_'+val)
-            self.net_seg.load_state_dict(torch.load(seg_net_pth))
+            self.net_seg.load_state_dict(torch.load(seg_net_pth, map_location='cuda:0'))
 
             self.net_seg.to(self.device)
             self.net_seg.eval()

@@ -133,7 +133,7 @@ class Demo():
 
             out = self.net_map(map_in)
             out = out.permute(0, 2, 3, 1)
-            uv_out = F.grid_sample(image, out)
+            uv_out = F.grid_sample(image, out, align_corners = True)
             setattr(self, 'uv_'+ val, tensor2image(uv_out[0, :, :, :]))
 
     def combine_textures(self):

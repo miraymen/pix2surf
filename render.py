@@ -45,17 +45,11 @@ class Renderer():
         bpy.context.scene.render.resolution_x = self.args.scene_width
         bpy.context.scene.render.resolution_y = self.args.scene_height
 
-        # bpy.context.scene.render.engine = 'CYCLES'
 
-        # bpy.context.scene.render.image_settings.color_mode = 'RGB'
-        # bpy.context.scene.render.image_settings.file_format = 'JPEG'
         bpy.context.scene.render.image_settings.quality = 100
 
-        # Set render resolution
-        # bpy.context.obj.data[0]
         self.scene.render.resolution_percentage = 100
         self.scene.render.use_border = False
-        # scene.render.alpha_mode = 'TRANSPARENT'
         self.scene.render.alpha_mode = 'TRANSPARENT'
 
 
@@ -78,15 +72,6 @@ class Renderer():
         lamp_object.select = True
         self.scene.objects.active = lamp_object
 
-        # # Add Light
-        # bpy.ops.object.light_add(type='POINT', radius=1.0, location=(0, -2, 0.5))
-        # bpy.context.object.data.energy = 50
-        # bpy.ops.object.light_add(type='POINT', radius=1.0, location=(0, 2, 0.5))
-        # bpy.context.object.data.energy = 50
-        # bpy.ops.object.light_add(type='POINT', radius=1.0, location=(-2, 0, 0.5))
-        # bpy.context.object.data.energy = 50
-        # bpy.ops.object.light_add(type='POINT', radius=1.0, location=(2, 0, 0.5))
-        # bpy.context.object.data.energy = 50
 
     def setup_camera(self):
         bpy.ops.object.camera_add()
@@ -116,8 +101,7 @@ class Renderer():
         mat.use_shadeless = True
         obj_object.data.materials.append(mat)
 
-        # if body_bool:
-        #     self.obj_focus = bpy.data.objects[0]
+
 
     def setup_objects(self):
         dirs = ['low', 'up', 'body']

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gdown https://drive.google.com/uc?id=1ULtdEXRrxH9_CtTrWensIbwybeWKz8Dj
+wget https://nextcloud.mpi-klsb.mpg.de/index.php/s/ozRcGdGwAJ3tBns
 unzip pix2surf.zip
 rm pix2surf.zip
 mv data ./train/
